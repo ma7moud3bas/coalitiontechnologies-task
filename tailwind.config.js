@@ -5,9 +5,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Bebas: ['Bebas Neue', 'sans-serif'],
-        Lato: ['Lato', 'sans-serif'],
-        Oswald: ['Oswald', 'sans-serif'],
+        bebas: ['Bebas Neue', 'sans-serif'],
+        lato: ['Lato', 'sans-serif'],
+        oswald: ['Oswald', 'sans-serif'],
       },
       colors: {
         brand: {

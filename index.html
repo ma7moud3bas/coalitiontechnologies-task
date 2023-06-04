@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Los Angeles Mountains</title>
     <!-- imports -->
-    <script src="./src/main.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400;500;600;700;800&family=Lato:wght@400;700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <script type="module" src="./src/main.js" defer></script>
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
      <!-- metadata -->
     <meta name="description" content="Los Angeles Mountains is a website that provides information about the mountains in Los Angeles.">
     <meta property="og:title" content="Los Angeles Mountains">
@@ -23,15 +24,140 @@
     <meta name="twitter:image:alt" content="Los Angeles Mountains">
     <meta name="twitter:domain" content="vercel.app">
     <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
-    <link rel="manifest" href="/public/site.webmanifest">
-    <link rel="shortcut icon" href="/public/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    
+    <main class="w-full flex flex-col min-h-screen">
+      <section id="hero" class="min-h-screen w-full">
+        <div id="hero-nav" class="w-full flex">
+          <div class="container xl:max-w-6xl flex justify-between items-center mx-auto px-8 py-3">
+              <div class="brand">
+                <img class="" src="./src/assets/Images/Logo.png" alt="los angeles mountains logo">
+              </div>
+              <nav class="flex gap-x-4 h-full items-center">
+                <a href="#history" class="uppercase text-brand-white font-lato underline underline-offset-[6px] [text-decoration-thickness:2px;] font-black text-xs italic">01. History</a>
+                <a href="#team" class="uppercase text-brand-white font-lato underline underline-offset-[6px] [text-decoration-thickness:2px;] font-black text-xs italic">02. Team</a>
+              </nav> 
+          </div>
+        </div>
+      </section>
+      <div class="nav-scroll-container relative">
+        <div id="history-nav" class="w-full flex top-0 sticky bg-white z-10">
+            <div class="container xl:max-w-6xl flex justify-between items-center mx-auto px-8 py-3">
+              <div class="brand">
+                <img class="" src="./src/assets/Images/Logo-letters.png" alt="los angeles mountains logo">
+              </div>
+              <nav class="flex gap-x-4 h-full items-center">
+                <a href="#history" class="uppercase text-brand-charcoal font-lato underline underline-offset-[6px] [text-decoration-thickness:2px;] font-black text-xs italic">01. History</a>
+                <a href="#team" class="uppercase text-brand-charcoal font-lato underline underline-offset-[6px] [text-decoration-thickness:2px;] font-black text-xs italic">02. Team</a>
+              </nav> 
+            </div>
+          </div>
+        <section id="history" class="min-h-screen w-full max-lg:h-auto lg:h-screen flex flex-col">
+          <div class="container xl:max-w-6xl flex gap-y-8 mx-auto px-8 py-3 pt-12 flex-col h-full">
+            <h2 class="flex items-end font-oswald relative">
+               <span class="text-brand-slate-gray text-8xl lg:text-9xl font-black">01.</span>
+                  <span class="text-brand-police-blue text-3xl lg:text-4xl font-black uppercase mb-6 -ml-5 lg:-ml-7 lg:mb-8">History</span>
+            </h2>
+            <div class="lg:px-16 text-justify">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ipsam laboriosam minima saepe dignissimos nisi dolorum animi, amet aliquam libero, magnam rerum obcaecati recusandae mollitia fugiat itaque dolore ducimus neque voluptatibus doloribus sint. Eos laudantium excepturi consequuntur quam suscipit doloremque, tenetur mollitia ea minus soluta fuga aspernatur laboriosam provident expedita!
+            </div>
+            
+          </div>
+          <div class="flex w-full bg-brand-police-blue/90 mt-auto ">
+            <div class="w-full container xl:max-w-6xl mx-auto px-8 py-8">
+                <section class="splide" aria-label="Splide Basic HTML Example">
+                  <div class="splide__track">
+                    <ul class="splide__list ">
+                      <li class="splide__slide"><img class="w-full h-full object-cover" src="./src/assets/Images/slide1.png" alt="man on a clef"></li>
+                      <li class="splide__slide"><img class="w-full h-full object-cover" src="./src/assets/Images/slide2.png" alt="mountain"></li>
+                      <li class="splide__slide"><img class="w-full h-full object-cover" src="./src/assets/Images/slide1.png" alt="man on a clef"></li>
+                      <li class="splide__slide"><img class="w-full h-full object-cover" src="./src/assets/Images/slide2.png" alt="mountain"></li>
+                      <li class="splide__slide"><img class="w-full h-full object-cover" src="./src/assets/Images/slide1.png" alt="man on a clef"></li>
+                      <li class="splide__slide"><img class="w-full h-full object-cover" src="./src/assets/Images/slide2.png" alt="mountain"></li>
+                      <li class="splide__slide"><img class="w-full h-full object-cover" src="./src/assets/Images/slide1.png" alt="man on a clef"></li>
+                      <li class="splide__slide"><img class="w-full h-full object-cover" src="./src/assets/Images/slide2.png" alt="mountain"></li>
+                      <li class="splide__slide"><img class="w-full h-full object-cover" src="./src/assets/Images/slide1.png" alt="man on a clef"></li>
+                      <li class="splide__slide"><img class="w-full h-full object-cover" src="./src/assets/Images/slide2.png" alt="mountain"></li>
+                      <li class="splide__slide"><img class="w-full h-full object-cover" src="./src/assets/Images/slide1.png" alt="man on a clef"></li>
+                      <li class="splide__slide"><img class="w-full h-full object-cover" src="./src/assets/Images/slide2.png" alt="mountain"></li>
+                    </ul>
+                  </div>
+                </section>
+            </div>
+          </div>
+        </section>
+        <section id="team" class="min-h-screen w-full">
+          <div class="w-full bg-brand-white">
+            <div class="w-full container xl:max-w-6xl mx-auto px-8 py-8 lg:py-12">
+              <div class="flex max-md:flex-col md:items-center gap-x-8 gap-y-12 lg:pl-8">
+                <h2 class="flex items-end font-oswald relative">
+                  <span class="text-brand-slate-gray text-8xl lg:text-9xl font-black">02.</span>
+                  <span class="text-brand-police-blue text-3xl lg:text-4xl font-black uppercase mb-6 -ml-5 lg:-ml-7 lg:mb-8">climb</span>
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sapiente obcaecati, harum saepe enim quos ipsa inventore impedit veniam magni, consequatur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full bg-brand-police-blue">
+            <div id="tab-buttons" class="w-full container xl:max-w-6xl mx-auto md:px-8 max-md:w-full max-md:grid max-md:grid-cols-2">
+              <button data-tabid="1" data-selected="true" class="font-oswald uppercase transition-colors data-[selected=true]:underline data-[selected=true]:text-brand-police-blue data-[selected=true]:bg-brand-white/70 text-brand-white/70 font-extrabold text-2xl px-6 py-1.5 ">Mountain 1</button>  
+              <button data-tabid="2" data-selected="false" class="font-oswald  uppercase transition-colors data-[selected=true]:underline data-[selected=true]:text-brand-police-blue data-[selected=true]:bg-brand-white/70 text-brand-white/70 font-extrabold text-2xl px-6 py-1.5 ">Mountain 2</button>
+            </div>
+          </div>
+          <div id="tab-data-container" class="w-full flex container xl:max-w-6xl mx-auto px-8 py-8 lg:py-12">
+            <div data-tab-id="1" data-active="true" class="data-[active=false]:hidden my-8 lg:mt-20 bg-white/70 flex flex-col gap-y-4 px-8 py-4 max-md:w-full">
+              <h3 class="uppercase text-brand-police-blue font-oswald font-bold text-3xl lg:text-4xl">Schedule</h3>
+              <div class="flex max-md:justify-between md:gap-x-16">
+                <div class="flex flex-col py-1">
+                  <p>25 Nov 2016</p>
+                  <p>28 Nov 2016</p>
+                  <p class="mt-4">18 Dec 2016</p>
+                  <p class="mt-4">7 Jan 2017</p>
+                </div>
+                <div class="flex flex-col py-1">
+                  <p>Vistibulum vivira</p>
+                  <p>Vistibulum vivira</p>
+                  <p class="mt-4">Vistibulum vivira</p>
+                  <p class="mt-4">Vistibulum vivira</p>
+                </div>
+              </div>
+            </div>
+            <div data-tab-id="2" data-active="false" class="data-[active=false]:hidden my-8 lg:mt-20 bg-white/70 flex flex-col gap-y-4 px-8 py-4 max-md:w-full">
+              <h3 class="uppercase text-brand-police-blue font-oswald font-bold text-3xl lg:text-4xl">Schedule 2</h3>
+              <div class="flex max-md:justify-between md:gap-x-16">
+                <div class="flex flex-col py-1">
+                  <p>25 Nov 2017</p>
+                  <p>28 Nov 2017</p>
+                  <p class="mt-4">18 Dec 2017</p>
+                  <p class="mt-4">7 Jan 2018</p>
+                </div>
+                <div class="flex flex-col py-1">
+                  <p>Vistibulum vivira</p>
+                  <p>Vistibulum vivira</p>
+                  <p class="mt-4">Vistibulum vivira</p>
+                  <p class="mt-4">Vistibulum vivira</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="w-full bg-brand-police-blue">
+        <div class="w-full flex container xl:max-w-6xl mx-auto  items-center justify-between  px-8 py-3">
+          <div class="brand">
+              <img class="" src="./src/assets/Images/Logo-footer.png" alt="los angeles mountains logo">
+          </div>
+          <p class="text-brand-slate-gray italic font-lato font-semibold uppercase text-sm max-sm:hidden">Copyright 2016. All rights received.</p>
+        </div>
+      </footer>
+      </main>
+
   </body>
 </html>
